@@ -63,7 +63,7 @@ api.reanimate(false, unragdoll)
 
 Plays a custom animation on the real (visible) character model. Only works while reanimation is active.
 
--   **`url`** (string): The raw URL to a script that returns a keyframe table (e.g., from `ichfickdeinemutta.pages.dev`).
+-   **`url`** (string): The raw URL to a script that returns a keyframe table.
 -   **`speed`** (number) `[optional]`: The playback speed multiplier. Defaults to `1.0`.
 
 **Note:** Calling this function with the same URL of a currently playing animation will stop it.
@@ -135,7 +135,7 @@ local ragdoll = replicated_storage:WaitForChild("RagdollEvent")
 local unragdoll = replicated_storage:WaitForChild("UnragdollEvent")
 
 -- Load the API
-local api = loadstring(game:HttpGet("https://raw.githubusercontent.com/x64entry/universal-reanimate-api/main/module.lua"))()
+local api = loadstring(game:HttpGet("https://github.com/iskidfromfocat/sauna/blob/main/Reanimation-API.lua"))()
 
 -- Enable reanimation and fire the ragdoll event
 api.reanimate(true, ragdoll)
